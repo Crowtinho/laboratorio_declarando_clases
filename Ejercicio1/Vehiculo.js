@@ -7,7 +7,7 @@ export class Vehiculo{
     }
 
     obtenerDetalle(){
-        return `|| Marca: ${this.make} || Modelo: ${this.model}|| año: ${this.year} ||`;
+        return `|| Marca: ${this.make} || Modelo: ${this.model} || Año: ${this.year} ||`;
     }
 }
 
