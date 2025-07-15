@@ -7,11 +7,16 @@ class Desarrollador extends Empleado{
     }
 
     calcularSalario(){
-        return super.calcularSalario() + ` Lenguaje: ${this.language} ||`
+        return super.calcularSalario() + ` || Lenguaje: ${this.language}`
     }
+
+    obtenerDetalle(){
+        return `${super.obtenerDetalle()}`
+    }
+
 }
 
 let desarrollador = new Desarrollador("Andres",23,4500000,"Java");
-console.log(desarrollador.calcularSalario());
+console.log(desarrollador.obtenerDetalle());
 
 

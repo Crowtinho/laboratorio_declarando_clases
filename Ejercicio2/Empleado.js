@@ -7,10 +7,14 @@ export class Empleado{
     }
 
     calcularSalario(){
-        return `|| Nombre: ${this.name} || Edad: ${this.age} || Salario base: ${this.baseSalary} ||`
+        return `Salario base: ${this.baseSalary}`
+    }
+
+    obtenerDetalle(){
+        return `|| Nombre: ${this.name} || Edad: ${this.age} || ${this.calcularSalario()} ||`
     }
 }
 
-let empleado = new Empleado("juan",18,1430000)
-console.log(empleado.calcularSalario());
+ let empleado = new Empleado("juan",18,1430000)
+ console.log(empleado.obtenerDetalle());
  

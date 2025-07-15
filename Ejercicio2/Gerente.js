@@ -8,10 +8,16 @@ class Gerente extends Empleado{
 
     calcularSalario(){
         let total = this.baseSalary + ((this.baseSalary * this.bonus)/100);
-        return super.calcularSalario() + ` Bonificación: ${(this.baseSalary * this.bonus)/100} ||`
+        return super.calcularSalario() + ` || Bonificación: ${(this.baseSalary * this.bonus)/100}`
     }
+
+    obtenerDetalle(){
+        return `${super.obtenerDetalle()}`
+    }
+
+
 }
 
 let gerente = new Gerente("Pedro",45,2650000,12);
-console.log(gerente.calcularSalario());
+console.log(gerente.obtenerDetalle());
 
